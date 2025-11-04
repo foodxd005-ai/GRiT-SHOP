@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #ff8c00;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  background-color: #ff8c00;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin-right: 8px;
+}
+
+.lang {
+  font-weight: bold;
+}
+
+/* Search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ff8c00;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 40%;
+  border: 2px solid #000;
+}
+
+.search-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.search-container button {
+  background-color: #ff8c00;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+/* User menu */
+.user-menu a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  background-color: #fff;
+  border-bottom: 2px solid #ff8c00;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+/* Popular section */
+.popular {
+  padding: 30px;
+  text-align: center;
+}
+
+.popular h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background-color: #ff8c00;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  background-color: #e67a00;
+}
+
+.category p {
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-container {
+    width: 90%;
+  }
+
+  .categories {
+    gap: 25px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+}

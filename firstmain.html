@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GR!T - No Excuse. Just GR!T.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Black', sans-serif;
+      background-color: #ff8c00;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      background-color: #ff8c00;  
+      padding: 80px 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    /* พื้นหลังลายกีฬาแบบจาง */
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tennis_ball_icon.svg/512px-Tennis_ball_icon.svg.png'),
+                        url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Soccerball.svg/512px-Soccerball.svg.png');
+      background-repeat: no-repeat;
+      background-size: 80px, 100px;
+      background-position: 15% 30%, 85% 60%;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      font-size: 90px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .tagline {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .shop-link {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border-bottom: 2px solid white;
+      padding-bottom: 3px;
+      transition: 0.3s;
+    }
+
+    .shop-link:hover {
+      opacity: 0.8;
+      transform: translateX(4px);
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 60px;
+      }
+      .tagline {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="content">
+      <div class="logo">GR!T</div>
+      <div class="tagline">NO EXCUSE.<br>JUST GR!T.</div>
+      <a href="index.html" class="shop-link">GO TO GR!T SHOP →</a>
+    </div>
+  </div>
+
+</body>
+</html>
